@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id "org.springframework.boot" version "$springVersion"
+}
+bootRun {
+    mainClass = "org.example.Main"
+}
+group = 'org.example'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-web:$springVersion"
+    implementation "org.springframework.boot:spring-boot-starter-jdbc:$springVersion"
+    implementation 'com.google.guava:guava:33.2.1-jre'
+    implementation 'org.springframework.data:spring-data-jdbc:3.3.0'
+    implementation 'com.google.code.gson:gson:2.11.0'
+    runtimeOnly 'com.h2database:h2:2.2.224'
+
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testImplementation "org.assertj:assertj-core:3.26.0"
+    testImplementation "org.springframework.boot:spring-boot-starter-test:$springVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testRuntimeOnly 'com.h2database:h2:2.2.224'
+
+    testCompileOnly "org.projectlombok:lombok:$lombokVersion"
+    testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
+}
+
+test {
+    useJUnitPlatform()
+}

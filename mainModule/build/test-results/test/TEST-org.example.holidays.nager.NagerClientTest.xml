@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.holidays.nager.NagerClientTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2024-06-10T08:30:11" hostname="LAPTOP-5PA87F5C" time="0.0">
+  <properties/>
+  <testcase name="shouldWork()" classname="org.example.holidays.nager.NagerClientTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

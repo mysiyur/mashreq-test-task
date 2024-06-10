@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.service.TimeOffServiceTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2024-06-10T08:30:12" hostname="LAPTOP-5PA87F5C" time="0.351">
+  <properties/>
+  <testcase name="shouldStoreRequest()" classname="org.example.service.TimeOffServiceTest" time="0.027"/>
+  <testcase name="repetition 1 of 20" classname="org.example.service.TimeOffServiceTest" time="0.025"/>
+  <testcase name="repetition 2 of 20" classname="org.example.service.TimeOffServiceTest" time="0.014"/>
+  <testcase name="repetition 3 of 20" classname="org.example.service.TimeOffServiceTest" time="0.014"/>
+  <testcase name="repetition 4 of 20" classname="org.example.service.TimeOffServiceTest" time="0.013"/>
+  <testcase name="repetition 5 of 20" classname="org.example.service.TimeOffServiceTest" time="0.015"/>
+  <testcase name="repetition 6 of 20" classname="org.example.service.TimeOffServiceTest" time="0.015"/>
+  <testcase name="repetition 7 of 20" classname="org.example.service.TimeOffServiceTest" time="0.015"/>
+  <testcase name="repetition 8 of 20" classname="org.example.service.TimeOffServiceTest" time="0.012"/>
+  <testcase name="repetition 9 of 20" classname="org.example.service.TimeOffServiceTest" time="0.013"/>
+  <testcase name="repetition 10 of 20" classname="org.example.service.TimeOffServiceTest" time="0.012"/>
+  <testcase name="repetition 11 of 20" classname="org.example.service.TimeOffServiceTest" time="0.012"/>
+  <testcase name="repetition 12 of 20" classname="org.example.service.TimeOffServiceTest" time="0.012"/>
+  <testcase name="repetition 13 of 20" classname="org.example.service.TimeOffServiceTest" time="0.025"/>
+  <testcase name="repetition 14 of 20" classname="org.example.service.TimeOffServiceTest" time="0.013"/>
+  <testcase name="repetition 15 of 20" classname="org.example.service.TimeOffServiceTest" time="0.013"/>
+  <testcase name="repetition 16 of 20" classname="org.example.service.TimeOffServiceTest" time="0.012"/>
+  <testcase name="repetition 17 of 20" classname="org.example.service.TimeOffServiceTest" time="0.013"/>
+  <testcase name="repetition 18 of 20" classname="org.example.service.TimeOffServiceTest" time="0.012"/>
+  <testcase name="repetition 19 of 20" classname="org.example.service.TimeOffServiceTest" time="0.011"/>
+  <testcase name="repetition 20 of 20" classname="org.example.service.TimeOffServiceTest" time="0.011"/>
+  <system-out><![CDATA[  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-06-10T12:30:12.131+04:00  INFO 39476 --- [    Test worker] org.example.service.TimeOffServiceTest   : Starting TimeOffServiceTest using Java 21.0.1 with PID 39476 (started by Yury in C:\Users\Yury\Documents\GitHub\cercli-test-task\mainModule)
+2024-06-10T12:30:12.131+04:00  INFO 39476 --- [    Test worker] org.example.service.TimeOffServiceTest   : The following 1 profile is active: "test"
+2024-06-10T12:30:12.237+04:00  INFO 39476 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-06-10T12:30:12.244+04:00  INFO 39476 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JDBC repository interfaces.
+2024-06-10T12:30:12.287+04:00  INFO 39476 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-06-10T12:30:12.288+04:00  INFO 39476 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-10T12:30:12.289+04:00  INFO 39476 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-10T12:30:12.316+04:00  INFO 39476 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-10T12:30:12.316+04:00  INFO 39476 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2024-06-10T12:30:12.339+04:00  INFO 39476 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-06-10T12:30:12.342+04:00  INFO 39476 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn15: url=jdbc:h2:mem:d122a277-dfcf-445f-b77a-da03d320a950 user=SA
+2024-06-10T12:30:12.342+04:00  INFO 39476 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-06-10T12:30:12.436+04:00  INFO 39476 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 63065 (http) with context path '/'
+2024-06-10T12:30:12.438+04:00  INFO 39476 --- [    Test worker] org.example.service.TimeOffServiceTest   : Started TimeOffServiceTest in 0.327 seconds (process running for 7.331)
+2024-06-10T12:30:12.457+04:00  INFO 39476 --- [    Test worker] org.example.service.TimeOffService       : Processing time off request for 24733654-fdde-4cd1-aeff-1600085fab64 user
+2024-06-10T12:30:12.459+04:00  INFO 39476 --- [    Test worker] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.459+04:00  INFO 39476 --- [    Test worker] org.example.service.TimeOffService       : Saving time off request for user 24733654-fdde-4cd1-aeff-1600085fab64
+2024-06-10T12:30:12.501+04:00  INFO 39476 --- [pool-1-thread-1] org.example.service.TimeOffService       : Processing time off request for 62230070-afe3-4104-9de0-c0a5ce88cf3a user
+2024-06-10T12:30:12.503+04:00  INFO 39476 --- [pool-1-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.503+04:00  INFO 39476 --- [pool-1-thread-1] org.example.service.TimeOffService       : Saving time off request for user 62230070-afe3-4104-9de0-c0a5ce88cf3a
+2024-06-10T12:30:12.505+04:00  INFO 39476 --- [pool-1-thread-2] org.example.service.TimeOffService       : Processing time off request for 62230070-afe3-4104-9de0-c0a5ce88cf3a user
+2024-06-10T12:30:12.507+04:00  INFO 39476 --- [pool-1-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.510+04:00  INFO 39476 --- [pool-1-thread-2] org.example.service.TimeOffService       : Time off request 60eec0a2-d063-46f3-bff8-f66abdea093d has dates intersection, checking eligibility
+2024-06-10T12:30:12.522+04:00  INFO 39476 --- [pool-2-thread-1] org.example.service.TimeOffService       : Processing time off request for 62da17a1-e59c-4901-a3ac-65e7f6338b29 user
+2024-06-10T12:30:12.523+04:00  INFO 39476 --- [pool-2-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.523+04:00  INFO 39476 --- [pool-2-thread-1] org.example.service.TimeOffService       : Saving time off request for user 62da17a1-e59c-4901-a3ac-65e7f6338b29
+2024-06-10T12:30:12.525+04:00  INFO 39476 --- [pool-2-thread-2] org.example.service.TimeOffService       : Processing time off request for 62da17a1-e59c-4901-a3ac-65e7f6338b29 user
+2024-06-10T12:30:12.526+04:00  INFO 39476 --- [pool-2-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.526+04:00  INFO 39476 --- [pool-2-thread-2] org.example.service.TimeOffService       : Time off request 642ea51b-9bb2-4ac5-a168-ed76523af479 has dates intersection, checking eligibility
+2024-06-10T12:30:12.536+04:00  INFO 39476 --- [pool-3-thread-2] org.example.service.TimeOffService       : Processing time off request for ccd1e3ed-00e4-4f7d-b839-fe95e92d08a9 user
+2024-06-10T12:30:12.537+04:00  INFO 39476 --- [pool-3-thread-2] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.538+04:00  INFO 39476 --- [pool-3-thread-2] org.example.service.TimeOffService       : Saving time off request for user ccd1e3ed-00e4-4f7d-b839-fe95e92d08a9
+2024-06-10T12:30:12.540+04:00  INFO 39476 --- [pool-3-thread-1] org.example.service.TimeOffService       : Processing time off request for ccd1e3ed-00e4-4f7d-b839-fe95e92d08a9 user
+2024-06-10T12:30:12.540+04:00  INFO 39476 --- [pool-3-thread-1] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.541+04:00  INFO 39476 --- [pool-3-thread-1] org.example.service.TimeOffService       : Time off request bb6fe09b-6bc4-4a44-a097-df116178f43d has dates intersection, checking eligibility
+2024-06-10T12:30:12.551+04:00  INFO 39476 --- [pool-4-thread-1] org.example.service.TimeOffService       : Processing time off request for 21534ad2-f1e7-4010-ac84-b25f57dab12f user
+2024-06-10T12:30:12.552+04:00  INFO 39476 --- [pool-4-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.552+04:00  INFO 39476 --- [pool-4-thread-1] org.example.service.TimeOffService       : Saving time off request for user 21534ad2-f1e7-4010-ac84-b25f57dab12f
+2024-06-10T12:30:12.554+04:00  INFO 39476 --- [pool-4-thread-2] org.example.service.TimeOffService       : Processing time off request for 21534ad2-f1e7-4010-ac84-b25f57dab12f user
+2024-06-10T12:30:12.555+04:00  INFO 39476 --- [pool-4-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.555+04:00  INFO 39476 --- [pool-4-thread-2] org.example.service.TimeOffService       : Time off request b89e9c50-7732-419e-b759-41d99aee15b8 has dates intersection, checking eligibility
+2024-06-10T12:30:12.566+04:00  INFO 39476 --- [pool-5-thread-1] org.example.service.TimeOffService       : Processing time off request for b6492791-c1b6-42a5-ae0e-ce968bb1fa4c user
+2024-06-10T12:30:12.567+04:00  INFO 39476 --- [pool-5-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.567+04:00  INFO 39476 --- [pool-5-thread-1] org.example.service.TimeOffService       : Saving time off request for user b6492791-c1b6-42a5-ae0e-ce968bb1fa4c
+2024-06-10T12:30:12.569+04:00  INFO 39476 --- [pool-5-thread-2] org.example.service.TimeOffService       : Processing time off request for b6492791-c1b6-42a5-ae0e-ce968bb1fa4c user
+2024-06-10T12:30:12.570+04:00  INFO 39476 --- [pool-5-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.571+04:00  INFO 39476 --- [pool-5-thread-2] org.example.service.TimeOffService       : Time off request d8f0a729-d87f-49a4-857e-fb32391f3eb3 has dates intersection, checking eligibility
+2024-06-10T12:30:12.583+04:00  INFO 39476 --- [pool-6-thread-1] org.example.service.TimeOffService       : Processing time off request for 6a2a7176-33a5-4480-8b55-8bdacc49aa48 user
+2024-06-10T12:30:12.584+04:00  INFO 39476 --- [pool-6-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.584+04:00  INFO 39476 --- [pool-6-thread-1] org.example.service.TimeOffService       : Saving time off request for user 6a2a7176-33a5-4480-8b55-8bdacc49aa48
+2024-06-10T12:30:12.586+04:00  INFO 39476 --- [pool-6-thread-2] org.example.service.TimeOffService       : Processing time off request for 6a2a7176-33a5-4480-8b55-8bdacc49aa48 user
+2024-06-10T12:30:12.587+04:00  INFO 39476 --- [pool-6-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.588+04:00  INFO 39476 --- [pool-6-thread-2] org.example.service.TimeOffService       : Time off request 2b90cf13-3027-4474-9698-6ce9639ce581 has dates intersection, checking eligibility
+2024-06-10T12:30:12.600+04:00  INFO 39476 --- [pool-7-thread-2] org.example.service.TimeOffService       : Processing time off request for a9d71888-f3c6-4bee-a50e-a87961497333 user
+2024-06-10T12:30:12.601+04:00  INFO 39476 --- [pool-7-thread-2] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.601+04:00  INFO 39476 --- [pool-7-thread-2] org.example.service.TimeOffService       : Saving time off request for user a9d71888-f3c6-4bee-a50e-a87961497333
+2024-06-10T12:30:12.603+04:00  INFO 39476 --- [pool-7-thread-1] org.example.service.TimeOffService       : Processing time off request for a9d71888-f3c6-4bee-a50e-a87961497333 user
+2024-06-10T12:30:12.604+04:00  INFO 39476 --- [pool-7-thread-1] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.605+04:00  INFO 39476 --- [pool-7-thread-1] org.example.service.TimeOffService       : Time off request ad18baef-38f0-4ebf-a8fc-f640f96c4cd2 has dates intersection, checking eligibility
+2024-06-10T12:30:12.615+04:00  INFO 39476 --- [pool-8-thread-1] org.example.service.TimeOffService       : Processing time off request for 4023410c-130a-4631-9b03-db0e6d6e16c8 user
+2024-06-10T12:30:12.616+04:00  INFO 39476 --- [pool-8-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.616+04:00  INFO 39476 --- [pool-8-thread-1] org.example.service.TimeOffService       : Saving time off request for user 4023410c-130a-4631-9b03-db0e6d6e16c8
+2024-06-10T12:30:12.618+04:00  INFO 39476 --- [pool-8-thread-2] org.example.service.TimeOffService       : Processing time off request for 4023410c-130a-4631-9b03-db0e6d6e16c8 user
+2024-06-10T12:30:12.618+04:00  INFO 39476 --- [pool-8-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.619+04:00  INFO 39476 --- [pool-8-thread-2] org.example.service.TimeOffService       : Time off request 10389b26-b4d1-49b7-baf9-b3825f3ded4a has dates intersection, checking eligibility
+2024-06-10T12:30:12.628+04:00  INFO 39476 --- [pool-9-thread-1] org.example.service.TimeOffService       : Processing time off request for 6d25e12f-0443-4539-bbbb-e706fd49e548 user
+2024-06-10T12:30:12.629+04:00  INFO 39476 --- [pool-9-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.629+04:00  INFO 39476 --- [pool-9-thread-1] org.example.service.TimeOffService       : Saving time off request for user 6d25e12f-0443-4539-bbbb-e706fd49e548
+2024-06-10T12:30:12.630+04:00  INFO 39476 --- [pool-9-thread-2] org.example.service.TimeOffService       : Processing time off request for 6d25e12f-0443-4539-bbbb-e706fd49e548 user
+2024-06-10T12:30:12.632+04:00  INFO 39476 --- [pool-9-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.632+04:00  INFO 39476 --- [pool-9-thread-2] org.example.service.TimeOffService       : Time off request c1a6be53-dc64-4caf-b9fe-9b1ccb55db48 has dates intersection, checking eligibility
+2024-06-10T12:30:12.643+04:00  INFO 39476 --- [ool-10-thread-1] org.example.service.TimeOffService       : Processing time off request for 1050cd3f-2299-4b1f-8a85-ee334d2097f2 user
+2024-06-10T12:30:12.644+04:00  INFO 39476 --- [ool-10-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.644+04:00  INFO 39476 --- [ool-10-thread-1] org.example.service.TimeOffService       : Saving time off request for user 1050cd3f-2299-4b1f-8a85-ee334d2097f2
+2024-06-10T12:30:12.645+04:00  INFO 39476 --- [ool-10-thread-2] org.example.service.TimeOffService       : Processing time off request for 1050cd3f-2299-4b1f-8a85-ee334d2097f2 user
+2024-06-10T12:30:12.646+04:00  INFO 39476 --- [ool-10-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.647+04:00  INFO 39476 --- [ool-10-thread-2] org.example.service.TimeOffService       : Time off request f1be9da4-6a0a-43f9-8090-7b508dafb8ab has dates intersection, checking eligibility
+2024-06-10T12:30:12.655+04:00  INFO 39476 --- [ool-11-thread-1] org.example.service.TimeOffService       : Processing time off request for d2a55008-0d9e-474c-a531-40581346ca85 user
+2024-06-10T12:30:12.656+04:00  INFO 39476 --- [ool-11-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.656+04:00  INFO 39476 --- [ool-11-thread-1] org.example.service.TimeOffService       : Saving time off request for user d2a55008-0d9e-474c-a531-40581346ca85
+2024-06-10T12:30:12.658+04:00  INFO 39476 --- [ool-11-thread-2] org.example.service.TimeOffService       : Processing time off request for d2a55008-0d9e-474c-a531-40581346ca85 user
+2024-06-10T12:30:12.659+04:00  INFO 39476 --- [ool-11-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.659+04:00  INFO 39476 --- [ool-11-thread-2] org.example.service.TimeOffService       : Time off request 3bc26f98-865b-49c4-a5e3-96a1e8759663 has dates intersection, checking eligibility
+2024-06-10T12:30:12.668+04:00  INFO 39476 --- [ool-12-thread-1] org.example.service.TimeOffService       : Processing time off request for 8be64d09-b8b4-4512-8ef9-c10a74f51243 user
+2024-06-10T12:30:12.669+04:00  INFO 39476 --- [ool-12-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.669+04:00  INFO 39476 --- [ool-12-thread-1] org.example.service.TimeOffService       : Saving time off request for user 8be64d09-b8b4-4512-8ef9-c10a74f51243
+2024-06-10T12:30:12.671+04:00  INFO 39476 --- [ool-12-thread-2] org.example.service.TimeOffService       : Processing time off request for 8be64d09-b8b4-4512-8ef9-c10a74f51243 user
+2024-06-10T12:30:12.672+04:00  INFO 39476 --- [ool-12-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.673+04:00  INFO 39476 --- [ool-12-thread-2] org.example.service.TimeOffService       : Time off request 8ebbce04-657d-4b7d-9aaf-2378d4dfe52f has dates intersection, checking eligibility
+2024-06-10T12:30:12.681+04:00  INFO 39476 --- [ool-13-thread-1] org.example.service.TimeOffService       : Processing time off request for 76056576-8819-4333-907f-0a71dcdfc7c3 user
+2024-06-10T12:30:12.682+04:00  INFO 39476 --- [ool-13-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.682+04:00  INFO 39476 --- [ool-13-thread-1] org.example.service.TimeOffService       : Saving time off request for user 76056576-8819-4333-907f-0a71dcdfc7c3
+2024-06-10T12:30:12.684+04:00  INFO 39476 --- [ool-13-thread-2] org.example.service.TimeOffService       : Processing time off request for 76056576-8819-4333-907f-0a71dcdfc7c3 user
+2024-06-10T12:30:12.698+04:00  INFO 39476 --- [ool-13-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.698+04:00  INFO 39476 --- [ool-13-thread-2] org.example.service.TimeOffService       : Time off request 847c8a67-39a5-4c11-967c-1218c3e52d65 has dates intersection, checking eligibility
+2024-06-10T12:30:12.709+04:00  INFO 39476 --- [ool-14-thread-1] org.example.service.TimeOffService       : Processing time off request for b718cd2a-5169-4388-af17-d3d675902a40 user
+2024-06-10T12:30:12.710+04:00  INFO 39476 --- [ool-14-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.710+04:00  INFO 39476 --- [ool-14-thread-1] org.example.service.TimeOffService       : Saving time off request for user b718cd2a-5169-4388-af17-d3d675902a40
+2024-06-10T12:30:12.711+04:00  INFO 39476 --- [ool-14-thread-2] org.example.service.TimeOffService       : Processing time off request for b718cd2a-5169-4388-af17-d3d675902a40 user
+2024-06-10T12:30:12.712+04:00  INFO 39476 --- [ool-14-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.713+04:00  INFO 39476 --- [ool-14-thread-2] org.example.service.TimeOffService       : Time off request 4dad342a-e3fa-48ca-ad0b-dbd8789bca05 has dates intersection, checking eligibility
+2024-06-10T12:30:12.722+04:00  INFO 39476 --- [ool-15-thread-1] org.example.service.TimeOffService       : Processing time off request for db577cfb-191b-4930-8aa9-79beca9e83c7 user
+2024-06-10T12:30:12.723+04:00  INFO 39476 --- [ool-15-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.723+04:00  INFO 39476 --- [ool-15-thread-1] org.example.service.TimeOffService       : Saving time off request for user db577cfb-191b-4930-8aa9-79beca9e83c7
+2024-06-10T12:30:12.725+04:00  INFO 39476 --- [ool-15-thread-2] org.example.service.TimeOffService       : Processing time off request for db577cfb-191b-4930-8aa9-79beca9e83c7 user
+2024-06-10T12:30:12.726+04:00  INFO 39476 --- [ool-15-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.727+04:00  INFO 39476 --- [ool-15-thread-2] org.example.service.TimeOffService       : Time off request 84d1462c-7982-4058-b9f5-e874f40be6e3 has dates intersection, checking eligibility
+2024-06-10T12:30:12.736+04:00  INFO 39476 --- [ool-16-thread-2] org.example.service.TimeOffService       : Processing time off request for 4d44adf9-3b2b-48ee-b83c-6295a41a1094 user
+2024-06-10T12:30:12.737+04:00  INFO 39476 --- [ool-16-thread-2] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.737+04:00  INFO 39476 --- [ool-16-thread-2] org.example.service.TimeOffService       : Saving time off request for user 4d44adf9-3b2b-48ee-b83c-6295a41a1094
+2024-06-10T12:30:12.739+04:00  INFO 39476 --- [ool-16-thread-1] org.example.service.TimeOffService       : Processing time off request for 4d44adf9-3b2b-48ee-b83c-6295a41a1094 user
+2024-06-10T12:30:12.740+04:00  INFO 39476 --- [ool-16-thread-1] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.740+04:00  INFO 39476 --- [ool-16-thread-1] org.example.service.TimeOffService       : Time off request d28a552a-bb0f-4aca-9c5f-d5087d875e91 has dates intersection, checking eligibility
+2024-06-10T12:30:12.749+04:00  INFO 39476 --- [ool-17-thread-1] org.example.service.TimeOffService       : Processing time off request for 55daf8c1-0a1f-414d-8690-f26af7ad8019 user
+2024-06-10T12:30:12.750+04:00  INFO 39476 --- [ool-17-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.750+04:00  INFO 39476 --- [ool-17-thread-1] org.example.service.TimeOffService       : Saving time off request for user 55daf8c1-0a1f-414d-8690-f26af7ad8019
+2024-06-10T12:30:12.752+04:00  INFO 39476 --- [ool-17-thread-2] org.example.service.TimeOffService       : Processing time off request for 55daf8c1-0a1f-414d-8690-f26af7ad8019 user
+2024-06-10T12:30:12.753+04:00  INFO 39476 --- [ool-17-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.753+04:00  INFO 39476 --- [ool-17-thread-2] org.example.service.TimeOffService       : Time off request 022cb7e5-42a0-450f-876d-2a129c546628 has dates intersection, checking eligibility
+2024-06-10T12:30:12.763+04:00  INFO 39476 --- [ool-18-thread-1] org.example.service.TimeOffService       : Processing time off request for 7e45be1b-2bdb-4179-bbbe-08e4b24d461d user
+2024-06-10T12:30:12.763+04:00  INFO 39476 --- [ool-18-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.763+04:00  INFO 39476 --- [ool-18-thread-1] org.example.service.TimeOffService       : Saving time off request for user 7e45be1b-2bdb-4179-bbbe-08e4b24d461d
+2024-06-10T12:30:12.765+04:00  INFO 39476 --- [ool-18-thread-2] org.example.service.TimeOffService       : Processing time off request for 7e45be1b-2bdb-4179-bbbe-08e4b24d461d user
+2024-06-10T12:30:12.766+04:00  INFO 39476 --- [ool-18-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.766+04:00  INFO 39476 --- [ool-18-thread-2] org.example.service.TimeOffService       : Time off request cf7805b9-b26b-4c6f-bbf6-fe31e0132ebf has dates intersection, checking eligibility
+2024-06-10T12:30:12.774+04:00  INFO 39476 --- [ool-19-thread-2] org.example.service.TimeOffService       : Processing time off request for 9b64d62d-293b-4fc0-8b70-7662f35cedc9 user
+2024-06-10T12:30:12.775+04:00  INFO 39476 --- [ool-19-thread-2] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.775+04:00  INFO 39476 --- [ool-19-thread-2] org.example.service.TimeOffService       : Saving time off request for user 9b64d62d-293b-4fc0-8b70-7662f35cedc9
+2024-06-10T12:30:12.777+04:00  INFO 39476 --- [ool-19-thread-1] org.example.service.TimeOffService       : Processing time off request for 9b64d62d-293b-4fc0-8b70-7662f35cedc9 user
+2024-06-10T12:30:12.777+04:00  INFO 39476 --- [ool-19-thread-1] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.778+04:00  INFO 39476 --- [ool-19-thread-1] org.example.service.TimeOffService       : Time off request 45d5338f-d4b6-45bd-b00c-289830176bd3 has dates intersection, checking eligibility
+2024-06-10T12:30:12.786+04:00  INFO 39476 --- [ool-20-thread-1] org.example.service.TimeOffService       : Processing time off request for f03e6412-ac31-4332-80a3-2b415473d262 user
+2024-06-10T12:30:12.787+04:00  INFO 39476 --- [ool-20-thread-1] org.example.service.TimeOffService       : Found 0 time off requests
+2024-06-10T12:30:12.787+04:00  INFO 39476 --- [ool-20-thread-1] org.example.service.TimeOffService       : Saving time off request for user f03e6412-ac31-4332-80a3-2b415473d262
+2024-06-10T12:30:12.789+04:00  INFO 39476 --- [ool-20-thread-2] org.example.service.TimeOffService       : Processing time off request for f03e6412-ac31-4332-80a3-2b415473d262 user
+2024-06-10T12:30:12.790+04:00  INFO 39476 --- [ool-20-thread-2] org.example.service.TimeOffService       : Found 1 time off requests
+2024-06-10T12:30:12.790+04:00  INFO 39476 --- [ool-20-thread-2] org.example.service.TimeOffService       : Time off request a9050ce2-6d87-4486-9366-ee13a6e02546 has dates intersection, checking eligibility
+2024-06-10T12:30:12.798+04:00  INFO 39476 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-06-10T12:30:12.799+04:00  INFO 39476 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
