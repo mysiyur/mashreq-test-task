@@ -40,6 +40,8 @@ bin/
 *.tar.gz
 *.rar
 ./gradle/
+./idea/
+./.gradle/
 
 ### Mac OS ###
 .DS_Store
