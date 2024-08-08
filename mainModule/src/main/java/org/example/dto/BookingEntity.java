@@ -4,15 +4,15 @@ import lombok.Builder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Table("active_bookings")
 @Builder(toBuilder = true)
-@Table("time_off_request")
-public record TimeOffRequestEntry(
+public record BookingEntity(
         @Id UUID id,
-        UUID requestCategoryId,
-        UUID employeeId,
-        LocalDate startDate,
-        LocalDate endDate
-) {}
+        UUID roomId,
+        LocalDateTime from,
+        LocalDateTime until
+) {
+}

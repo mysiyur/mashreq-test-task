@@ -23,7 +23,8 @@ dependencies {
     implementation 'com.google.guava:guava:33.2.1-jre'
     implementation 'org.springframework.data:spring-data-jdbc:3.3.0'
     implementation 'com.google.code.gson:gson:2.11.0'
-    runtimeOnly 'com.h2database:h2:2.2.224'
+    implementation 'org.liquibase:liquibase-core:4.27.0'
+//    runtimeOnly "com.h2database:h2:h2Version"
 
     compileOnly "org.projectlombok:lombok:$lombokVersion"
     annotationProcessor "org.projectlombok:lombok:$lombokVersion"
@@ -31,10 +32,10 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
     testImplementation "org.assertj:assertj-core:3.26.0"
     testImplementation "org.springframework.boot:spring-boot-starter-test:$springVersion"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-api:$junitVersion"
 
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-api:$junitVersion"
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    testRuntimeOnly 'com.h2database:h2:2.2.224'
+//    testRuntimeOnly "com.h2database:h2:$h2Version"
 
     testCompileOnly "org.projectlombok:lombok:$lombokVersion"
     testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
