@@ -17,15 +17,15 @@ class BookingRequestTest {
     public void shouldBeJsonizable() throws JsonProcessingException {
         final var entry = new BookingRequest(
                 10,
-                LocalDateTime.parse("2024-08-04T10:00:00"),
-                LocalDateTime.parse("2024-08-04T10:15:00")
+                LocalDateTime.parse("2024-08-04T10:00"),
+                LocalDateTime.parse("2024-08-04T10:15")
         );
 
         final var json = """
                 {
                     "capacity": 10,
-                    "from": "2024-08-04T10:00:00",
-                    "until": "2024-08-04T10:15:00"
+                    "from": "2024-08-04T10:00",
+                    "until": "2024-08-04T10:15"
                 }
                 """;
 

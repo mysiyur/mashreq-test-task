@@ -40,6 +40,7 @@ public class BookingService {
         }
         final var suitableRooms = roomsRepository.findSuitableRooms(desiredCapacity);
         final var occupiedIds = bookingsRepository.getOccupiedIds(from, until);
+        log.info(occupiedIds.toString());
         final var availableRoom = suitableRooms.stream()
                 .filter(it -> !occupiedIds.contains(it.id()))
                 .min(comparing(RoomEntity::capacity));
@@ -48,8 +49,8 @@ public class BookingService {
         }
         final var bookingEntity = BookingEntity.builder()
                 .roomId(availableRoom.get().id())
-                .from(from)
-                .until(until)
+                .bookedFrom(from)
+                .bookedUntil(until)
                 .build();
         bookingsRepository.save(bookingEntity);
     }

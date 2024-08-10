@@ -20,11 +20,11 @@ tasks.withType(JavaCompile).configureEach {
 dependencies {
     implementation "org.springframework.boot:spring-boot-starter-web:$springVersion"
     implementation "org.springframework.boot:spring-boot-starter-jdbc:$springVersion"
+    implementation "org.springframework.data:spring-data-jdbc:$springVersion"
     implementation 'com.google.guava:guava:33.2.1-jre'
-    implementation 'org.springframework.data:spring-data-jdbc:3.3.0'
     implementation 'com.google.code.gson:gson:2.11.0'
     implementation 'org.liquibase:liquibase-core:4.27.0'
-//    runtimeOnly "com.h2database:h2:h2Version"
+    runtimeOnly "com.h2database:h2:$h2Version"
 
     compileOnly "org.projectlombok:lombok:$lombokVersion"
     annotationProcessor "org.projectlombok:lombok:$lombokVersion"
@@ -35,7 +35,7 @@ dependencies {
 
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-api:$junitVersion"
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-//    testRuntimeOnly "com.h2database:h2:$h2Version"
+    testRuntimeOnly "com.h2database:h2:$h2Version"
 
     testCompileOnly "org.projectlombok:lombok:$lombokVersion"
     testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"

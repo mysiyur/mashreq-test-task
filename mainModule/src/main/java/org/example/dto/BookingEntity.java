@@ -2,6 +2,7 @@ package org.example.dto;
 
 import lombok.Builder;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDateTime;
@@ -12,7 +13,7 @@ import java.util.UUID;
 public record BookingEntity(
         @Id UUID id,
         UUID roomId,
-        LocalDateTime from,
-        LocalDateTime until
+        @Column("booked_from") LocalDateTime bookedFrom,
+        @Column("booked_until") LocalDateTime bookedUntil
 ) {
 }

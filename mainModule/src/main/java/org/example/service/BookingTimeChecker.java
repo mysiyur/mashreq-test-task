@@ -1,6 +1,7 @@
 package org.example.service;
 
 import org.example.util.TimeInterval;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -8,6 +9,7 @@ import java.util.List;
 
 import static java.time.Duration.between;
 
+@Component
 public class BookingTimeChecker {
 
     private static final List<LocalTime[]> BLOCKED_INTERVALS = List.of(

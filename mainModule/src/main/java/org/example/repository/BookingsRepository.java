@@ -13,15 +13,13 @@ import java.util.UUID;
 @Repository
 public interface BookingsRepository extends ListCrudRepository<BookingEntity, UUID> {
 
-    @Query("SELECT DISTINCT room_id FROM bookings WHERE NOT (from >= :until or until <= :from)")
+    @Query("SELECT DISTINCT room_id FROM active_bookings WHERE NOT (booked_from >= :until or booked_until <= :from)")
     Set<UUID> getOccupiedIds(LocalDateTime from, LocalDateTime until);
 
-    @Query("""
-        SELECT r.id FROM rooms as r WHERE r.id NOT IN
-            (
-                SELECT DISTINCT room_id FROM bookings
-                WHERE NOT (from >= :until or until <= :from)
-            )
-    """)
+    @Query(
+        """
+        SELECT r.id FROM rooms as r WHERE r.id NOT IN (SELECT DISTINCT room_id FROM active_bookings  WHERE NOT (booked_from >= :until or booked_until <= :from))
+    """
+    )
     List<UUID> getFreeRooms(LocalDateTime from, LocalDateTime until);
 }
